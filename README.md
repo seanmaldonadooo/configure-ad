@@ -40,7 +40,7 @@ Create a domain controller VM named "DC-1" (Windows Server 2022). Take note of t
 <br />
 
 <p>
-<img src="https://github.com/seanmaldonadooo/configure-ad/assets/149026184/2ddbd1eb-ce1f-404f-b4f5-498089d52ac3" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/seanmaldonadooo/configure-ad/assets/149026184/2ddbd1eb-ce1f-404f-b4f5-498089d52ac3" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Set Domain Controller’s NIC Private IP address to be static. After this, create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created with the first Domain Controller VM. Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher)
@@ -51,10 +51,9 @@ Set Domain Controller’s NIC Private IP address to be static. After this, creat
 <img src="https://github.com/seanmaldonadooo/configure-ad/assets/149026184/055c053c-97b0-49ea-b82f-bf52b804743e" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping).
+Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping). Notice that the request times out.
 </p>
 <br />
-![image](https://github.com/seanmaldonadooo/configure-ad/assets/149026184/fcbaaad5-9cbd-4915-8ca9-64cf40a272ab)
 
 <p>
 <img src="https://github.com/seanmaldonadooo/configure-ad/assets/149026184/fcbaaad5-9cbd-4915-8ca9-64cf40a272ab" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -65,7 +64,7 @@ Login to the Domain Controller and enable ICMPv4 in on the local windows Firewal
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/seanmaldonadooo/configure-ad/assets/149026184/fc63d7d2-4202-4862-b7d1-0f986af22cd2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Check back at Client-1 to see the ping succeed.
